@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+}
+
+.loading {
+    animation-name: loading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    background:#54546d;
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+  }
+
+@keyframes loading {
+    from {
+        opacity: 1;
+        pointer-events: all;
+      }
+    to {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+
+header {
+    background-color: rgb(50, 50, 67);
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: aliceblue;
+}
+
+h2, p, h3 {
+    margin: 1rem;
+}
+
+p {
+  width: 80%;
+  margin-left: 2rem;
+}
+
+h3, h2{
+  margin-top: 2rem;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial', Arial, sans-serif;
+    background-color: rgb(190, 191, 193);
+}
+
+.last {
+  margin-bottom: 5rem;
+}
+
+.img1, .img2 {
+    height: 200px;
+    width: 500px;
+    object-fit: cover;
+    margin-left: 2rem;
+}
+
+.img1 {
+    animation-name: flowers1;
+    animation-duration: 10s; 
+    animation-iteration-count: 10;
+    animation-timing-function: ease-out; 
+    animation-direction: alternate; 
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+   }
+   
+   @keyframes flowers1 {
+     from {
+       width: 0px;
+     }
+     to {
+       width: 600px; 
+     }
+   }
+
+.img2 {
+    animation-name: flowers2;
+    animation-duration: 10s; 
+    animation-iteration-count: 10;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+   }
+   
+   @keyframes flowers2 {
+     from {
+       width: 600px;
+     }
+     to {
+       width: 0px; 
+     }
+   }
+
+li:hover {
+    transform: scale(100%, 100%);
+    background: hsl(0, 0%, 100%);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+a {
+    color: rgb(74, 61, 184);
+}
+
+
+.state1, .state2 {
+  width: 200px;
+  height: 250px;
+  margin-left: 2rem;
+  background:  rgb(50, 50, 67);
+  filter: blur(10px);
+  transition: all .5s ease-in;
+}
+figcaption {
+  color: aliceblue;
+  text-align: center;
+}
+
+.poppy, .bonnet {
+  width: 200px;
+  height: 200px;
+}
+
+.state1:hover, .state2:hover {
+  transform: rotate(360deg) scale(100%, 100%);
+  filter: blur(0);
+}
+
+.row {
+  display: flex;
+}
+
+

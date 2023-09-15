@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;600;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+/* main */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 232, 250);
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+header {
+    background-image: url(https://images.unsplash.com/photo-1518105570919-e342af1a8275?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1773&q=80);
+    background-position: 10% 45%;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .6);
+    color: white;
+    padding: 40px;
+    border-bottom: solid #9865ba 8px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0em;
+}
+
+p {
+    margin-left: 1em;
+}
+
+
+ /* intro row */
+ 
+.intro {
+    display: flex; 
+    justify-content: space-around;    
+}
+
+img {
+    width: 130px; 
+   margin-top: 1.5em;
+}
+
+.info {
+    margin-top: 1em;
+    font-size: 17px;
+    margin-left: 2.5em;
+}
+
+.details {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: lighter;
+}
+
+.label {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+}
+
+/* body */
+
+h2, h3 {
+    font-family: 'Playfair Display', serif;
+    margin-left: 1em;
+}
+
+h2 {
+    color: #733ea1;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+
+/* my assignments*/
+
+.description {
+    margin-top: 0;
+    font-weight: lighter;
+}
+
+ol {
+    margin: 0.5em;
+}
+
+li {
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    margin-right: 1rem;
+}
+
+.titles {
+    font-weight: lighter;
+}
+
+/* media query*/
+
+@media screen and (min-width: 720px){
+
+    .row {
+        display: flex;
+        margin: 1em;
+        justify-content: center;
+    }
+
+    img {
+        max-width: 200%;
+    }
+
+    .info {
+        font-size: larger;
+    }
+
+    .projects, .labs {
+        width: 50%;
+    }
+
+    .labs {
+        margin-left: 2rem;
+        border-left: 2px solid #9865bab0;
+    }
+
+    h3 {
+        text-align: center;
+    }
+    
+ 
+}

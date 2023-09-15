@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+  }
+
+  /* header */
+  
+  header {
+    background:#4e614e;
+    font: 100 1rem/1.2 sans-serif;
+  }
+  
+  .logo-combo {
+    display:flex;
+    align-items:center;
+  }
+  
+  .logo {
+    display:block;
+    margin-left:2rem;
+    max-width: 50%;
+  }
+  
+  header h1 {
+    color:rgb(209, 214, 185);
+    font-family: 'Playfair Display', serif;
+    font-weight: 600; 
+    margin-right: 2rem;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    text-align: center;
+  }
+  
+  nav {
+    background:#192219;
+  }
+  
+  nav ul {
+    list-style:none;
+    font-family: 'Roboto', sans-serif;
+    display:flex;
+    justify-content:space-between;
+    padding:0;
+    margin:0;
+  }
+  
+  nav a {
+    display:block;
+    margin:1rem;
+    color:rgb(228, 226, 218);
+    text-decoration:none;
+  }
+  
+  /* body */
+
+  body {
+    margin:0;
+    background:#4e614e;
+    color:#ffffff;
+  }
+
+  .f {
+    background: #192219;
+  }
+  
+  /* main */
+  
+  main  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #5b785e;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+  }
+  
+  main img {
+    object-fit:cover;
+    width:100%;
+    height:100%;
+  }
+  
+  /* grid layout */
+  main {
+    font-family: 'Roboto', sans-serif;
+    display:grid;
+    grid-gap:.5rem;
+    grid-template-areas: 
+    "a b c d" 
+    "e f f g" 
+    "h i j k"; 
+  }
+  
+  .a {
+    grid-area: a;
+  }
+  .b {
+    grid-area: b;
+  }
+  .c {
+    grid-area: c;
+  }
+  .d {
+    grid-area: d;
+  }
+  .e {
+    grid-area: e;
+  }
+  .f {
+    grid-area: f;
+    padding:1rem;
+  }
+  .g {
+    grid-area: g;
+  }
+  .h {
+    grid-area: h;
+  }
+  .i {
+    grid-area: i;
+  }
+  .j {
+    grid-area: j;
+  }
+  .k {
+    grid-area: k;
+  }
